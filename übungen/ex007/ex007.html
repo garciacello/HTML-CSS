@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatacao de Texto</title>
+
+    <style>
+        body{
+            background-color: mediumpurple;
+        }
+        mark{
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um termo em <b>NEGRITO</b> usando a tag B (nao semantico)</p>
+    <p>Nesta fra temos um termo em <strong>Destaque</strong> usando STRONG (Semantico)</p>
+
+    <h2>Itálico / Ênfase </h2>
+    <p>Nesta frase temos um <i>termo em itálico</i>, usando a tag i( nao semantica)</p>
+    <p> Nesta frase,<em>temos um termo em ênfase</em> usando a tag Em (Semântico)
+    </p>
+
+    <h2>Texto marcado</h2>
+<p>Podemos criar um <mark>
+    texto marcado
+</mark>com a Tag MARK.</p>
+
+<h2>Texto Pequeno e Grande</h2>
+    <p>Estamos criando um <big>texto grande</big> e um texto ,<small>pequeno</small></p>
+
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluido</del> para indicar que deve ser lido mas nao considerado</p>
+
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar um texto como <ins>inserido </ins> para dar enfase e indicar que foi adicionado depois</p>
+
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas como x<sup>20</sup>+3 </p>
+
+    <h2>Texto subscrito</h2>
+    <p>A formula da água é H<sub>2</sub>O</p>
+
+
+    <pre>
+        <code>
+    num = int(input('Digite um numero'))
+    if num % 2 == 0:
+    print(f'O numero {num} é PAR)
+    else:
+    print(f'o numero {num} é IMPAR)
+    print('Fim do Programa')
+    <code>
+
+    </pre>
+
+    <h2>Citacoes Simples</h2>
+    <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+
+    <h2>Citacoes completas</h2>
+
+    <p>Segundo Shakespeare:</p>
+    <blockquote cite="https://www.pensador.com/citacoes_shakespeare/">
+        Nossas dúvidas são traidoras e nos fazem perder o que, com frequência, poderíamos ganhar, por simples medo de arriscar.
+    </blockquote>
+</body>
+</html>

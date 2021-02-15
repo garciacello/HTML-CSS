@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+    <style>
+        body{
+            background-color: #F6C90E;
+        }
+    </style>
+</head>
+<body>
+    <h2>Adaptação para Múltiplas midias</h2>
+    <p>Celular img 300 x 300 <br>
+    Tablet 700 x 700 <br>
+    Computador,TV 1000 x 1000<br>
+resolucao 80 x 80</p>
+
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplismente aumente e diminuar o tamanho do seu navegador
+    </p>
+    
+        <!--É importante que exista uma ordem entre os <source>, e nessa nossa configuração,
+os itens mais acima sejam os menores tamanhos para max-width e que os seguintes
+sejam maiores, de forma crescente. O último item dentro de <picture> deve ser a
+imagem padrão.-->
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Grande">
+    </picture>       
+
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML. <br>
+
+   <audio preload="metadata" controls>
+       <source src="midia/BrideAndGroom.mp3" type="audio/mpeg">
+        <source src="midia/BrideAndGroom.ogg" type="audio/ogg">
+        <source src="midia/BrideAndGroom.wav" type="audio/wav">
+        <p>Se o seu navegador não suporta áudio <a href="midia/BrideAndGroom.mp3" type="audio/mpeg"></a></p>
+   </audio>
+
+   <h1>Adicionando Vídeos hospedados localmente</h1>
+   <p>Este video está hospedado no meu próprio servidor</p>
+
+   <video width="600" poster="imagens/cello.jpg" controls>
+       <source src="midia/Aquarela.mp4" type="video/mp4">
+        <source src="midia/Aquarela.webm" type="video/webm">
+        <source src="midia/Aquarela.ogv" type="video/ogv">
+   </video>
+
+    <h1>Inserindo videos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kUt5W_vbNfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo videos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+</html>
